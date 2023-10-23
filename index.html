@@ -26,7 +26,7 @@
 
 	<body>
 		
-		<H2 id="heading">Nakshatra Vatika </H2 >
+		
 
 
 		<class id="body">
@@ -53,13 +53,16 @@
 			
             var container = document.querySelector( '#container' );
 			/*panolens*/
-var viewer = new PANOLENS.Viewer( { container: container , controlBar: false,  output: 'console' , autoHideInfospot: false, } );
-/*panolens-end*/
+
+var viewer = new PANOLENS.Viewer( { container: container , controlBar: false,  output: 'console' , autoHideInfospot: false, } );
+
+/*panolens-end*/
 			
 			viewer.addUpdateCallback(function(){});
 			
 			/*panoramas*/
-var PANO_20231021_164524_2 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231021_164524_2.jpg" );
+
+var PANO_20231021_164524_2 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231021_164524_2.jpg" );
 			PANO_20231021_164524_2.addEventListener('progress', onProgress);
 			PANO_20231021_164524_2.addEventListener('load', function(e){
 				endLoading();
@@ -70,14 +73,20 @@
 			PANO_20231021_164524_2.addEventListener('click', function(e){
 			});
 
-var infospotPANO_20231021_164524_20 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+
+var infospotPANO_20231021_164524_20 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
 					infospotPANO_20231021_164524_20.position.set( -4612.92, -164.35, 1897.97 );
 					PANO_20231021_164524_2.add(infospotPANO_20231021_164524_20);
-infospotPANO_20231021_164524_20.addEventListener('click', function(){
-ChangePanorama('PANO_20231021_164325_1');
-});
-viewer.add( PANO_20231021_164524_2 );
-var PANO_20231021_164325_1 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231021_164325_1.jpg" );
+
+infospotPANO_20231021_164524_20.addEventListener('click', function(){
+
+ChangePanorama('PANO_20231021_164325_1');
+
+});
+
+viewer.add( PANO_20231021_164524_2 );
+
+var PANO_20231021_164325_1 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231021_164325_1.jpg" );
 			PANO_20231021_164325_1.addEventListener('progress', onProgress);
 			PANO_20231021_164325_1.addEventListener('load', function(e){
 				endLoading();
@@ -88,20 +97,30 @@
 			PANO_20231021_164325_1.addEventListener('click', function(e){
 			});
 
-var infospotPANO_20231021_164325_10 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+
+var infospotPANO_20231021_164325_10 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
 					infospotPANO_20231021_164325_10.position.set( 4982.81, -240.64, -147.56 );
 					PANO_20231021_164325_1.add(infospotPANO_20231021_164325_10);
-infospotPANO_20231021_164325_10.addEventListener('click', function(){
-ChangePanorama('PANO_20231021_164524_2');
-});
-var infospotPANO_20231021_164325_11 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+
+infospotPANO_20231021_164325_10.addEventListener('click', function(){
+
+ChangePanorama('PANO_20231021_164524_2');
+
+});
+
+var infospotPANO_20231021_164325_11 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
 					infospotPANO_20231021_164325_11.position.set( -4956.27, -511.32, -271.52 );
 					PANO_20231021_164325_1.add(infospotPANO_20231021_164325_11);
-infospotPANO_20231021_164325_11.addEventListener('click', function(){
-ChangePanorama('PANO_20231021_164056_0');
-});
-viewer.add( PANO_20231021_164325_1 );
-var PANO_20231021_164056_0 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231021_164056_0.jpg" );
+
+infospotPANO_20231021_164325_11.addEventListener('click', function(){
+
+ChangePanorama('PANO_20231021_164056_0');
+
+});
+
+viewer.add( PANO_20231021_164325_1 );
+
+var PANO_20231021_164056_0 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231021_164056_0.jpg" );
 			PANO_20231021_164056_0.addEventListener('progress', onProgress);
 			PANO_20231021_164056_0.addEventListener('load', function(e){
 				endLoading();
@@ -112,21 +131,32 @@
 			PANO_20231021_164056_0.addEventListener('click', function(e){
 			});
 
-var infospotPANO_20231021_164056_00 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+
+var infospotPANO_20231021_164056_00 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
 					infospotPANO_20231021_164056_00.position.set( 240.00, -177.91, 4980.43 );
 					PANO_20231021_164056_0.add(infospotPANO_20231021_164056_00);
-infospotPANO_20231021_164056_00.addEventListener('click', function(){
-ChangePanorama('PANO_20231021_164325_1');
-ChangePanorama('PANO_20231021_164325_1');
-});
-var infospotPANO_20231021_164056_01 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+
+infospotPANO_20231021_164056_00.addEventListener('click', function(){
+
+ChangePanorama('PANO_20231021_164325_1');
+
+ChangePanorama('PANO_20231021_164325_1');
+
+});
+
+var infospotPANO_20231021_164056_01 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
 					infospotPANO_20231021_164056_01.position.set( 1997.14, -96.76, -4577.69 );
 					PANO_20231021_164056_0.add(infospotPANO_20231021_164056_01);
-infospotPANO_20231021_164056_01.addEventListener('click', function(){
-ChangePanorama('PANO_20231022_122409_0');
-});
-viewer.add( PANO_20231021_164056_0 );
-var PANO_20231022_122409_0 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_122409_0.jpg" );
+
+infospotPANO_20231021_164056_01.addEventListener('click', function(){
+
+ChangePanorama('PANO_20231022_122409_0');
+
+});
+
+viewer.add( PANO_20231021_164056_0 );
+
+var PANO_20231022_122409_0 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_122409_0.jpg" );
 			PANO_20231022_122409_0.addEventListener('progress', onProgress);
 			PANO_20231022_122409_0.addEventListener('load', function(e){
 				endLoading();
@@ -137,20 +167,30 @@
 			PANO_20231022_122409_0.addEventListener('click', function(e){
 			});
 
-var infospotPANO_20231022_122409_00 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+
+var infospotPANO_20231022_122409_00 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
 					infospotPANO_20231022_122409_00.position.set( -3850.24, -301.49, 3160.74 );
 					PANO_20231022_122409_0.add(infospotPANO_20231022_122409_00);
-infospotPANO_20231022_122409_00.addEventListener('click', function(){
-ChangePanorama('PANO_20231021_164056_0');
-});
-var infospotPANO_20231022_122409_01 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+
+infospotPANO_20231022_122409_00.addEventListener('click', function(){
+
+ChangePanorama('PANO_20231021_164056_0');
+
+});
+
+var infospotPANO_20231022_122409_01 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
 					infospotPANO_20231022_122409_01.position.set( 4968.14, -221.21, -442.15 );
 					PANO_20231022_122409_0.add(infospotPANO_20231022_122409_01);
-infospotPANO_20231022_122409_01.addEventListener('click', function(){
-ChangePanorama('PANO_20231022_122622_1');
-});
-viewer.add( PANO_20231022_122409_0 );
-var PANO_20231022_122622_1 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_122622_1.jpg" );
+
+infospotPANO_20231022_122409_01.addEventListener('click', function(){
+
+ChangePanorama('PANO_20231022_122622_1');
+
+});
+
+viewer.add( PANO_20231022_122409_0 );
+
+var PANO_20231022_122622_1 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_122622_1.jpg" );
 			PANO_20231022_122622_1.addEventListener('progress', onProgress);
 			PANO_20231022_122622_1.addEventListener('load', function(e){
 				endLoading();
@@ -161,26 +201,40 @@
 			PANO_20231022_122622_1.addEventListener('click', function(e){
 			});
 
-var infospotPANO_20231022_122622_10 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+
+var infospotPANO_20231022_122622_10 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
 					infospotPANO_20231022_122622_10.position.set( 591.74, -821.85, 4891.44 );
 					PANO_20231022_122622_1.add(infospotPANO_20231022_122622_10);
-infospotPANO_20231022_122622_10.addEventListener('click', function(){
-ChangePanorama('PANO_20231022_123004_2');
-});
-var infospotPANO_20231022_122622_11 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+
+infospotPANO_20231022_122622_10.addEventListener('click', function(){
+
+ChangePanorama('PANO_20231022_123004_2');
+
+});
+
+var infospotPANO_20231022_122622_11 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
 					infospotPANO_20231022_122622_11.position.set( -4940.52, -647.88, -263.72 );
 					PANO_20231022_122622_1.add(infospotPANO_20231022_122622_11);
-infospotPANO_20231022_122622_11.addEventListener('click', function(){
-ChangePanorama('PANO_20231022_122409_0');
-});
-var infospotPANO_20231022_122622_12 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+
+infospotPANO_20231022_122622_11.addEventListener('click', function(){
+
+ChangePanorama('PANO_20231022_122409_0');
+
+});
+
+var infospotPANO_20231022_122622_12 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
 					infospotPANO_20231022_122622_12.position.set( 4785.33, -249.02, -1395.20 );
 					PANO_20231022_122622_1.add(infospotPANO_20231022_122622_12);
-infospotPANO_20231022_122622_12.addEventListener('click', function(){
-ChangePanorama('PANO_20231022_123437_4');
-});
-viewer.add( PANO_20231022_122622_1 );
-var PANO_20231022_123004_2 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_123004_2.jpg" );
+
+infospotPANO_20231022_122622_12.addEventListener('click', function(){
+
+ChangePanorama('PANO_20231022_123437_4');
+
+});
+
+viewer.add( PANO_20231022_122622_1 );
+
+var PANO_20231022_123004_2 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_123004_2.jpg" );
 			PANO_20231022_123004_2.addEventListener('progress', onProgress);
 			PANO_20231022_123004_2.addEventListener('load', function(e){
 				endLoading();
@@ -191,14 +245,20 @@
 			PANO_20231022_123004_2.addEventListener('click', function(e){
 			});
 
-var infospotPANO_20231022_123004_20 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+
+var infospotPANO_20231022_123004_20 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
 					infospotPANO_20231022_123004_20.position.set( -4761.45, -1308.86, -718.98 );
 					PANO_20231022_123004_2.add(infospotPANO_20231022_123004_20);
-infospotPANO_20231022_123004_20.addEventListener('click', function(){
-ChangePanorama('PANO_20231022_122622_1');
-});
-viewer.add( PANO_20231022_123004_2 );
-var PANO_20231022_123437_4 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_123437_4.jpg" );
+
+infospotPANO_20231022_123004_20.addEventListener('click', function(){
+
+ChangePanorama('PANO_20231022_122622_1');
+
+});
+
+viewer.add( PANO_20231022_123004_2 );
+
+var PANO_20231022_123437_4 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_123437_4.jpg" );
 			PANO_20231022_123437_4.addEventListener('progress', onProgress);
 			PANO_20231022_123437_4.addEventListener('load', function(e){
 				endLoading();
@@ -209,8 +269,10 @@
 			PANO_20231022_123437_4.addEventListener('click', function(e){
 			});
 
-viewer.add( PANO_20231022_123437_4 );
-var PANO_20231022_123727_5 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_123727_5.jpg" );
+
+viewer.add( PANO_20231022_123437_4 );
+
+var PANO_20231022_123727_5 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_123727_5.jpg" );
 			PANO_20231022_123727_5.addEventListener('progress', onProgress);
 			PANO_20231022_123727_5.addEventListener('load', function(e){
 				endLoading();
@@ -221,8 +283,10 @@
 			PANO_20231022_123727_5.addEventListener('click', function(e){
 			});
 
-viewer.add( PANO_20231022_123727_5 );
-var PANO_20231022_123954_7 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_123954_7.jpg" );
+
+viewer.add( PANO_20231022_123727_5 );
+
+var PANO_20231022_123954_7 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_123954_7.jpg" );
 			PANO_20231022_123954_7.addEventListener('progress', onProgress);
 			PANO_20231022_123954_7.addEventListener('load', function(e){
 				endLoading();
@@ -233,8 +297,10 @@
 			PANO_20231022_123954_7.addEventListener('click', function(e){
 			});
 
-viewer.add( PANO_20231022_123954_7 );
-var PANO_20231022_124223_8 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_124223_8.jpg" );
+
+viewer.add( PANO_20231022_123954_7 );
+
+var PANO_20231022_124223_8 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_124223_8.jpg" );
 			PANO_20231022_124223_8.addEventListener('progress', onProgress);
 			PANO_20231022_124223_8.addEventListener('load', function(e){
 				endLoading();
@@ -245,8 +311,10 @@
 			PANO_20231022_124223_8.addEventListener('click', function(e){
 			});
 
-viewer.add( PANO_20231022_124223_8 );
-var PANO_20231022_124438_9 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_124438_9.jpg" );
+
+viewer.add( PANO_20231022_124223_8 );
+
+var PANO_20231022_124438_9 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_124438_9.jpg" );
 			PANO_20231022_124438_9.addEventListener('progress', onProgress);
 			PANO_20231022_124438_9.addEventListener('load', function(e){
 				endLoading();
@@ -257,8 +325,10 @@
 			PANO_20231022_124438_9.addEventListener('click', function(e){
 			});
 
-viewer.add( PANO_20231022_124438_9 );
-var PANO_20231022_124646_10 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_124646_10.jpg" );
+
+viewer.add( PANO_20231022_124438_9 );
+
+var PANO_20231022_124646_10 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_124646_10.jpg" );
 			PANO_20231022_124646_10.addEventListener('progress', onProgress);
 			PANO_20231022_124646_10.addEventListener('load', function(e){
 				endLoading();
@@ -269,8 +339,10 @@
 			PANO_20231022_124646_10.addEventListener('click', function(e){
 			});
 
-viewer.add( PANO_20231022_124646_10 );
-var PANO_20231022_124917_11 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_124917_11.jpg" );
+
+viewer.add( PANO_20231022_124646_10 );
+
+var PANO_20231022_124917_11 = new PANOLENS.ImagePanorama( "panoramas/PANO_20231022_124917_11.jpg" );
 			PANO_20231022_124917_11.addEventListener('progress', onProgress);
 			PANO_20231022_124917_11.addEventListener('load', function(e){
 				endLoading();
@@ -281,10 +353,13 @@
 			PANO_20231022_124917_11.addEventListener('click', function(e){
 			});
 
-viewer.add( PANO_20231022_124917_11 );
-$(document).ready(function(){ ChangePanorama('PANO_20231021_164056_0'); });
 
-/*panoramas-end*/
+viewer.add( PANO_20231022_124917_11 );
+
+$(document).ready(function(){ ChangePanorama('PANO_20231021_164056_0'); });
+
+
+/*panoramas-end*/
             
 			var stilloading = true;
 			function onProgress ( event ) {
